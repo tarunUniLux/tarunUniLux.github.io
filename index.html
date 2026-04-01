@@ -97,6 +97,31 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .project-card{background:var(--s1);border:1px solid var(--border);border-radius:12px;padding:2rem;transition:all 0.25s;position:relative;overflow:hidden}
 .project-card:hover{border-color:var(--border2);transform:translateY(-4px)}
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  transition: all 0.25s ease;
+}
+
+.project-btn svg {
+  fill: #fff;
+}
+
+.project-btn:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+}
+
+.project-links {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
 .project-num{font-family:'Playfair Display',serif;font-size:4rem;color:rgba(255,255,255,0.04);line-height:1;position:absolute;right:1.5rem;top:0.5rem}
 .project-type{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem}
 .project-title{font-family:'Playfair Display',serif;font-size:1.35rem;margin-bottom:0.75rem;line-height:1.25}
@@ -200,31 +225,6 @@ footer{max-width:1100px;margin:0 auto;padding:2rem 5rem;display:flex;justify-con
   .projects-grid{
     grid-template-columns: 1fr;
   }
-  .project-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  transition: all 0.25s ease;
-}
-
-.project-btn svg {
-  fill: #fff;
-}
-
-.project-btn:hover {
-  border-color: var(--border2);
-  transform: translateY(-2px);
-}
-
-.project-links {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-}
 
   /* EDUCATION */
   .edu-grid{
@@ -245,6 +245,7 @@ footer{max-width:1100px;margin:0 auto;padding:2rem 5rem;display:flex;justify-con
     text-align: center;
   }
 }
+  
 </style>
 </head>
 <body>
@@ -443,7 +444,7 @@ footer{max-width:1100px;margin:0 auto;padding:2rem 5rem;display:flex;justify-con
     
       <div class="project-links">
          <a href="https://github.com/tarunUniLux/smart-prosumer" target="_blank" class="project-btn" aria-label="GitHub Repository">
-          <svg height="18" width="18" viewBox="0 0 16 16" fill="ffffff">
+          <svg height="18" width="18" viewBox="0 0 16 16" fill="#ffffff">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 
             7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49
             -2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
